@@ -65,7 +65,7 @@ contract LuckyNumberGame {
         _generateLuckyNumber();
     }
     
-    // Get Lucky Nuber
+    // Get Lucky Number
     function getLuckyNumber() external view returns (uint8) {
         require(msg.sender == owner, "Only owner can see the lucky number");
         return luckyNumber;
